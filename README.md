@@ -21,13 +21,13 @@ This class is used for Easing animation.
  
  // 关键帧动画
  CAKeyframeAnimation *animation = \
- [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
+     [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
  
  // 设置值
  [animation setValues:[YXEasing calculateFrameFromValue:oldValue
- toValue:newValue
- func:ElasticEaseOut
- frameCount:500]];
+              toValue:newValue
+                 func:ElasticEaseOut
+           frameCount:500]];
  
  // 设置持续时间
  animation.duration  = 0.5f;
